@@ -7,7 +7,7 @@ job('Test') {
     }
     steps {
       maven{
-        mavenInstallation('Maven 3.1.1')
+        mavenInstallation('MyMaven')
         goals('clean')
         goals('verify')
       }
