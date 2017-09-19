@@ -6,6 +6,10 @@ job('Test') {
         scm('H/15 * * * *')
     }
     steps {
-        maven('-e clean test')
+      maven{
+        mavenInstallation('Maven 3.1.1')
+        goals('clean')
+        goals('verify')
+      }
     }
 }
