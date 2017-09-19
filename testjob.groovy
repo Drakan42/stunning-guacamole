@@ -1,4 +1,4 @@
-job('DSL-Tutorial-1-Test') {
+job('Test') {
     scm {
         git('git://github.com:Drakan42/Airport-demo.git')
     }
